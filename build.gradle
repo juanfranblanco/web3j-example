@@ -11,6 +11,10 @@ repositories {
 }
 
 dependencies {
-    compile 'org.web3j:core:0.1.1'
+    compile 'org.web3j:core:1.0.9'
     testCompile 'junit:junit:4.11'
+}
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'org.web3j.example.Main'
 }
